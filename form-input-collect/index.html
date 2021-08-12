@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="form-bg">
+     
+     <div class="input-form bgt">
+       <h1>form input</h1>
+       <form action="" name="formFi" method="post" onsubmit="formInpuT(); return false">
+          <div class="name-grp">
+            <div class="left">
+              <label>First Name : </label><br>
+               <input type="text" placeholder="First name" name="firstname">
+             </div>
+             <div class="right">
+              <label>Last Name : </label><br>
+               <input type="text" placeholder="Last name" name="lastname">
+             </div>
+             
+          </div>  
+          <div class="gender-grp">
+             <label>Gender : </label><br>
+              <input type="radio" name="gender" value="male"> Male 
+              <input type="radio" name="gender" value="female"> Female 
+              <input type="radio" name="gender" value="other"> Other 
+          </div> 
+          <textarea placeholder="Your Message Here ..." name="message" onkeyup="livemeSSage();"></textarea>
+          <h3 id="live-data">Total Charecter is : 
+          </h3>
+<!--          <h3 id="limit">Limit : 100 Charecters</h3>-->
+          <input type="submit" value="submit"> 
+       </form> 
+     </div>
+      <div class="output-form bgt">
+         <h1 id="output-f">form output</h1>
+          <h2 id="your-full-name" class="nameMess"></h2>
+          <h2 id="your-gender" class="nameMess"></h2>
+          <h2 class="messa" id="your-message">
+              <span></span>
+          </h2>
+       </div>
+       
+  </div>
+  
+<script src="js/main.js"></script>
+</body>
+</html>
+
