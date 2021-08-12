@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+    Travel Verification</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <div class="container">
+       <h1>Please Check Our <a href="#"><span> Term's</span></a> Before Going To This Tour</h1>
+       <form method="post" name="myform" onsubmit="formSUBmit(); return false">
+         <p class="gender"><strong>Select Your Gender :</strong>  
+          <label class="gen1">
+            <input type="radio" value="male" name="gender" class="gen male">Male
+          </label>
+          <label class="gen1">
+            <input type="radio" value="female" name="gender" class="gen female">Female
+          </label>
+         </p>
+         <p class="old"><strong>Select Your OLD :</strong>
+              <select id="list">
+                 <option>Select Here</option>
+                 <script>
+                    for(a=15;a<=50;a++){
+                    document.write('<option>'+a+'</option>');
+                    }
+                 </script>
+              </select>
+         </p>
+          <input type="submit" value="SEND" id="send">
+          <h2 id="output_text"></h2>
+          <h3><span>Note :</span> Male Traveler's Old Must Be 18 &ge; and Female Traveler's Must Be 24 &ge; Year's</h3>
+       </form>
+   </div>
+   <script src="js/custom.js"></script>
+</body>
+</html>
