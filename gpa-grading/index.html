@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GPA - GRADDING</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Wellcome to<br><span id="grad">Online Gradding System</span> </h1>
+        <form method="post" onsubmit="formInpuT(); return false">
+            <h2>Select Your Number</h2>
+            <select name="formselect" id="list">
+                <option value="number">Number Here</option>
+                <script>
+                    for(a=0;a<=100;a++){
+                    document.write('<option>'+a+'</option>');
+                    }
+                 </script>
+            </select>
+            <br>
+            <input type="submit" value="Click Here">
+        </form>
+        <h3 id="result"></h3>
+    </div>
+    
+    <script src="js/custom.js"></script>
+</body>
+</html>
